@@ -1,3 +1,23 @@
+---
+import { Image } from "astro:assets";
+import logoQuavo  from "../../assets/images/QuavoLogo.png"
+---
+
+
+
 <header>
-    
+    <div class="flex justify-between items-center p-4">
+        <nav>
+            <ul class="flex gap-4">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/">Productos</a></li>
+                <li><a href="/">Nosotros</a></li>
+                <li><a href="/">Contacto</a></li>
+                <li><a href="/">Login</a></li>
+            </ul>
+        </nav>
+        <a href="/" class="drop-shadow-lg drop-shadow-black/40 hover:scale-105 hover:drop-shadow-black/60 transition-all duration-300">
+            <Image src={logoQuavo} alt="Logo de Quavo Clothes" width={160} class="block max-h-30 object-contain  " />
+        </a>
+    </div>
 </header>
